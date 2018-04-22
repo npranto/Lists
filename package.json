@@ -1,0 +1,31 @@
+{
+  "name": "lists",
+  "version": "1.0.0",
+  "description": "Quickly draught down your todos, groceries, chores or any other lists of items quickly #powerOfLists",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npranto/lists.git"
+  },
+  "keywords": [
+    "lists"
+  ],
+  "author": "Nazmuz Shakib Pranto <npranto@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/npranto/lists/issues"
+  },
+  "homepage": "https://github.com/npranto/lists#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4"
+  }
+}
