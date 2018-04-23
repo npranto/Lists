@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const webpackConfig = {
 	mode: 'development',	
@@ -31,7 +32,13 @@ const webpackConfig = {
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
       template: './public/index.html'
-		})
+		}),
+		new CopyWebpackPlugin([
+			{ 
+				from: './src/assets/favicons', 
+				to: 'favicons/' 
+			}
+		])
 	],
 	devtool: 'inline-source-map',
 	devServer: {
