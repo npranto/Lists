@@ -1,3 +1,5 @@
-import renderUtil from './render';
+import render from './render';
 
-export const render = renderUtil;
+export default {
+  render
+};

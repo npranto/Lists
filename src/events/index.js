@@ -1,5 +1,5 @@
-const loadAllEvents = () => {
-    // invoke all event functions
-}
+const loadEvents = () => {
+  // invoke all event functions
+};
 
-export const loadEvents = loadAllEvents;
+export default loadEvents;
