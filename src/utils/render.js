@@ -6,7 +6,6 @@ const render = (parentId, Component, props) => {
 			resolve(true);
 		}
 		catch(e) {
-			console.error(e);
 			reject(false, e);
 		}
 		
