@@ -1,6 +1,6 @@
 module.exports = {
   "globals": {
-    "window": false
+    "window": true
   },
   "extends": [
     "airbnb-base",
