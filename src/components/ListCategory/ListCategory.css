@@ -1,0 +1,15 @@
+.ListCategory {
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5%;
+	margin: 1.5%;
+	border: 2px solid lightgray;
+	border-radius: 5%;
+	/* background: greenyellow; */
+	cursor: pointer;
+}
+.ListCategory .category-name {
+	margin: 0;
+}

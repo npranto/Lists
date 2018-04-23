@@ -3,5 +3,31 @@
 	height: 100vh;
 	box-sizing: border-box;
 	padding: 5% 10%;
-	margin: 0;    
+	margin: 0;
+}
+* {
+	font-family: 'Roboto', sans-serif;
+}
+._300 {
+	font-weight: 300;
+}
+._400 {
+	font-weight: 400;
+}
+._500 {
+	font-weight: 500;
+}
+._700 {
+	font-weight: 700;
+}
+._900 {
+	font-weight: 900;
+}
+.cancel-btn {
+	color: white;
+	background: #d84315;
+}
+.confirm-btn {
+	background: #43a047;
+	color: white;
 }

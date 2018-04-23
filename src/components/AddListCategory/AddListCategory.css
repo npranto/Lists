@@ -1,0 +1,21 @@
+.AddListCategory {
+	padding: 1%;
+	padding-left: 0;
+}
+.AddListCategory .add-category-btn {
+	outline: none;
+	border: none;
+	background: transparent;
+	padding: 0;
+}
+.add-category-btn i {
+	color: black;
+	transition: 0.1s ease-in;
+	cursor: pointer;
+}
+.add-category-btn i:hover {
+	color: red;
+}
+.swal-overlay {
+	background-color: rgba(43, 165, 137, 0.45);
+}

@@ -1,7 +1,6 @@
 .Header {
-  width: 100%;
-  color: gold;
+	width: 100%;
 }
 .Header .faded {
-  color: gray;
+	color: gray;
 }

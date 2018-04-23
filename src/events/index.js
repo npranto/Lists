@@ -1,5 +1,7 @@
+import loadAddListCategoryEvents from './AddListCategory';
+
 const loadEvents = () => {
-  // invoke all event functions
+  loadAddListCategoryEvents();
 };
 
 export default loadEvents;

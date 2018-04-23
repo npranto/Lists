@@ -7,7 +7,7 @@ const render = (parentId, Component, props) =>
       container.innerHTML = Component(props);
       resolve(true);
     } catch (e) {
-      reject(e);
+      reject(false, e);
     }
   });
 
