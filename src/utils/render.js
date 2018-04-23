@@ -10,7 +10,6 @@ const render = (parentId, Component, props) => {
 		}
 		
 	})
-   
 }
 
 export default render;
