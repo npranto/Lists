@@ -1,6 +1,7 @@
 import loadAddListCategoryEvents from './AddListCategory';
 import loadAddListItemEvents from './AddListItem';
 import loadListCategoryEvents from './ListCategory';
+import loadMaterialCheckboxEvents from './MaterialCheckbox';
 import setActiveCategoryIdEvent from './setActiveCategoryId';
 
 export const setActiveCategoryId = setActiveCategoryIdEvent;
@@ -21,6 +22,7 @@ export const loadEventsAfterDOMRender = () =>
       loadAddListCategoryEvents();
       loadListCategoryEvents();
       loadAddListItemEvents();
+      loadMaterialCheckboxEvents();
       resolve(true);
     } catch (error) {
       console.error(error);
