@@ -26,15 +26,18 @@ export const getState = () => {
             '1': [
               {
                 id: '1',
-                item: 'Buy milk'
+                item: 'Buy milk',
+                complete: false
               },
               {
                 id: '2',
-                item: 'Get broccoli'
+                item: 'Get broccoli',
+                complete: false
               },
               {
                 id: '3',
-                item: 'Get 3 Sprites'
+                item: 'Get 3 Sprites',
+                complete: false
               }
             ]
           },
@@ -43,7 +46,13 @@ export const getState = () => {
       );
 };
 
-export const setState = newState => {
+export const setState = (newState, cb) => {
   localStorage.setItem(KEY, JSON.stringify(newState));
+  if (cb) {
+    cb();
+  }
+};
+
+export const reloadDOMContent = () => {
   location.reload(); // TODO: Brute force! Find a better way to dynamically update DOM element
 };
