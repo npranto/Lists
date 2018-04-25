@@ -1,6 +1,7 @@
 import Header from './Header/Header';
 import AddListCategory from './AddListCategory/AddListCategory';
 import ListCategories from './ListCategories/ListCategories';
+import List from './List/List';
 import './App.css';
 
 const App = () => `
@@ -10,6 +11,7 @@ const App = () => `
 			${AddListCategory()}
 			${ListCategories()}
 		</div>
+		${List()}
 	</div>
 `;
 
