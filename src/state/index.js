@@ -1,4 +1,4 @@
-const { localStorage } = window;
+const { localStorage, location } = window;
 const KEY = '__LIST__';
 
 export const getState = () => {
@@ -10,23 +10,40 @@ export const getState = () => {
         {
           categories: [
             {
-              id: 1,
+              id: '1',
               category: 'Groceries'
             },
             {
-              id: 1,
+              id: '2',
               category: 'Chores'
             },
             {
-              id: 1,
+              id: '3',
               category: 'Homework'
             }
           ],
-          list: {}
+          list: {
+            '1': [
+              {
+                id: '1',
+                item: 'Buy milk'
+              },
+              {
+                id: '2',
+                item: 'Get broccoli'
+              },
+              {
+                id: '3',
+                item: 'Get 3 Sprites'
+              }
+            ]
+          },
+          activeCategoryId: '1'
         }
       );
 };
 
 export const setState = newState => {
   localStorage.setItem(KEY, JSON.stringify(newState));
+  location.reload(); // TODO: Brute force! Find a better way to dynamically update DOM element
 };

@@ -2,7 +2,7 @@ import swal from 'sweetalert';
 import { getState, setState } from './../state';
 import { getUniqueId } from './../utils';
 
-const { document } = window;
+const { document, location } = window;
 
 const loadAddListCategoryEvents = () => {
   document
@@ -38,7 +38,7 @@ const loadAddListCategoryEvents = () => {
           const newState = getState();
           getUniqueId('category').then(newId => {
             if (newId) {
-              newState.categories.push({
+              newState.categories.unshift({
                 id: newId,
                 category: value
               });
