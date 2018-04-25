@@ -32,7 +32,7 @@ export const getState = () => {
               {
                 id: '2',
                 item: 'Get broccoli',
-                complete: false
+                complete: true
               },
               {
                 id: '3',
