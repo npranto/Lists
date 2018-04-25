@@ -6,10 +6,15 @@
 	padding: 1.5%;
 	margin: 1.5%;
 	border: 2px solid lightgray;
+	color: gray;
 	border-radius: 5%;
 	/* background: greenyellow; */
 	cursor: pointer;
 }
 .ListCategory .category-name {
 	margin: 0;
+}
+.active {
+	background: dodgerblue;
+	color: white;
 }

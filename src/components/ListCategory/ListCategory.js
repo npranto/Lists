@@ -1,8 +1,11 @@
 import './ListCategory.css';
 
-const ListCategory = props => `
-		<div class="ListCategory">
-			<h3 class="category-name"> ${props.category} </h3>
+const ListCategory = ({ category, activeCategoryId }) => `
+		<div 
+			id="ListCategory" 
+			data-category-id="${category.id}" 
+			class="ListCategory ${category.id === activeCategoryId ? 'active' : ''}">
+				<h3 class="category-name"> ${category.category} </h3>
 		</div>
 `;
 

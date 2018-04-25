@@ -9,7 +9,7 @@ import App from './components/App';
 import './index.css';
 
 window.addEventListener('load', () => {
-  setActiveCategoryId();
+  // setActiveCategoryId();
 
   loadEventsBeforeDOMRender().then(
     (eventsLoadedBeforeDOMRender, errorInLoadEventsBeforeDOMRender) => {
