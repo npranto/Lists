@@ -5,7 +5,7 @@ import './List.css';
 
 const List = () => {
   const { activeCategoryId, list } = getState();
-  const listItems = list[activeCategoryId];
+  const listItems = list[activeCategoryId] ? list[activeCategoryId] : [];
   console.log(listItems);
   return `
 		<div class="List">
