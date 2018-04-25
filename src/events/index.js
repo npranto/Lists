@@ -1,9 +1,27 @@
 import loadAddListCategoryEvents from './AddListCategory';
 import loadAddListItemEvents from './AddListItem';
+import setActiveCategoryIdEvent from './setActiveCategoryId';
 
-const loadEvents = () => {
-  loadAddListCategoryEvents();
-  loadAddListItemEvents();
-};
+export const setActiveCategoryId = setActiveCategoryIdEvent;
 
-export default loadEvents;
+export const loadEventsBeforeDOMRender = () =>
+  new Promise((resolve, reject) => {
+    try {
+      resolve(true);
+    } catch (error) {
+      console.error(error);
+      reject(false, error);
+    }
+  });
+
+export const loadEventsAfterDOMRender = () =>
+  new Promise((resolve, reject) => {
+    try {
+      loadAddListCategoryEvents();
+      loadAddListItemEvents();
+      resolve(true);
+    } catch (error) {
+      console.error(error);
+      reject(false, error);
+    }
+  });

@@ -41,7 +41,7 @@ export const getState = () => {
               }
             ]
           },
-          activeCategoryId: '1'
+          activeCategoryId: null
         }
       );
 };
