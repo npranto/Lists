@@ -1,7 +1,20 @@
+/*
+	NOTE: Please don't remove or rename .delete and .delete-hover 
+	classes as it is also used as a toggler class inside 
+	*/
+.delete {
+	color: transparent;
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+}
+.delete-hover {
+	color: red;
+}
+
 /* 
 	Codepen: Google material style checkbox (css only) by Sam
 	*/
-.MaterialCheckbox {
+.MaterialCheckboxLabel {
 	position: relative;
 	margin: 0.5rem;
 	font-family: Arial, sans-serif;
@@ -9,13 +22,13 @@
 	/* cursor: pointer; */
 }
 
-.MaterialCheckbox .checkbox {
+.MaterialCheckboxLabel .checkbox {
 	position: relative;
 	top: -0.375rem;
 	margin: 0 1rem 0 0;
 	cursor: pointer;
 }
-.MaterialCheckbox .checkbox:before {
+.MaterialCheckboxLabel .checkbox:before {
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
@@ -27,7 +40,7 @@
 	height: 1rem;
 	border: 2px solid #f2f2f2;
 }
-.MaterialCheckbox .checkbox:checked:before {
+.MaterialCheckboxLabel .checkbox:checked:before {
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
@@ -38,7 +51,7 @@
 	border-top-style: none;
 	border-right-style: none;
 }
-.MaterialCheckbox .checkbox:after {
+.MaterialCheckboxLabel .checkbox:after {
 	content: '';
 	position: absolute;
 	top: -0.125rem;
