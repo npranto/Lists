@@ -9,37 +9,37 @@ export const getState = () => {
         {},
         {
           categories: [
-            {
-              id: '1',
-              category: 'Groceries'
-            },
-            {
-              id: '2',
-              category: 'Chores'
-            },
-            {
-              id: '3',
-              category: 'Homework'
-            }
+            // {
+            //   id: '1',
+            //   category: 'Groceries'
+            // },
+            // {
+            //   id: '2',
+            //   category: 'Chores'
+            // },
+            // {
+            //   id: '3',
+            //   category: 'Homework'
+            // }
           ],
           list: {
-            '1': [
-              {
-                id: '1',
-                item: 'Buy milk',
-                complete: false
-              },
-              {
-                id: '2',
-                item: 'Get broccoli',
-                complete: true
-              },
-              {
-                id: '3',
-                item: 'Get 3 Sprites',
-                complete: false
-              }
-            ]
+            // '1': [
+            //   {
+            //     id: '1',
+            //     item: 'Buy milk',
+            //     complete: false
+            //   },
+            //   {
+            //     id: '2',
+            //     item: 'Get broccoli',
+            //     complete: true
+            //   },
+            //   {
+            //     id: '3',
+            //     item: 'Get 3 Sprites',
+            //     complete: false
+            //   }
+            // ]
           },
           newItem: '',
           activeCategoryId: null
