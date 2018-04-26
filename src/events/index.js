@@ -3,6 +3,8 @@ import handleNewItemInputOnChange from './handleNewItemInputOnChange';
 import addNewItemToCurrentCategory from './addNewItemToCurrentCategory';
 import addNewCategory from './addNewCategory';
 import toggleItemComplete from './toggleItemComplete';
+import toggleDeleteIconOnItemHover from './toggleDeleteIconOnItemHover';
+import deleteItemFromCurrentCategory from './deleteItemFromCurrentCategory';
 
 export const loadEventsBeforeDOMRender = () =>
   new Promise((resolve, reject) => {
@@ -23,6 +25,8 @@ export const loadEventsAfterDOMRender = () =>
       addNewItemToCurrentCategory();
       addNewCategory();
       toggleItemComplete();
+      toggleDeleteIconOnItemHover();
+      deleteItemFromCurrentCategory();
       resolve(true);
     } catch (error) {
       console.error(error);
