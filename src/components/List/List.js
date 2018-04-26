@@ -7,7 +7,6 @@ const List = () => {
   const { activeCategoryId, list } = getState();
   const listItems =
     list && list[activeCategoryId] ? list[activeCategoryId] : [];
-  console.log(listItems);
   return activeCategoryId
     ? `
 			<div class="List">
