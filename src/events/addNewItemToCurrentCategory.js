@@ -8,14 +8,16 @@ const addNewItemToCurrentCategory = () => {
     '.AddListItem .add-list-item-form'
   );
   if (newItemFormElem) {
-    newItemFormElem.addEventListener('submit', () => {
+    newItemFormElem.addEventListener('submit', e => {
+      e.preventDefault();
       const newState = getState();
-      if (newState.newItem && newState.newItem.length > 0) {
+      if (newState.newItem.length > 0) {
         newState.list[newState.activeCategoryId].push(
           new ListItemObject(newState.newItem)
         );
+        newState.newItem = '';
+        setState(newState, reloadDOMContent);
       }
-      setState(newState, reloadDOMContent);
     });
   }
 };
