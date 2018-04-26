@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
             loadEventsAfterDOMRender().then(
               (eventsLoadedAfterDOMRender, errorInLoadEventsAfterDOMRender) => {
                 if (eventsLoadedAfterDOMRender) {
-                  console.log('COOL!');
+                  // DO NOTHING!
                 }
                 if (errorInLoadEventsAfterDOMRender) {
                   console.error(errorInLoadEventsAfterDOMRender);
