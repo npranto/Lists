@@ -1,16 +1,11 @@
 import { render } from './utils';
-import {
-  loadEventsBeforeDOMRender,
-  loadEventsAfterDOMRender,
-  setActiveCategoryId
-} from './events';
-
+import { loadEventsBeforeDOMRender, loadEventsAfterDOMRender } from './events';
+import { getState } from './state';
 import App from './components/App';
 import './index.css';
 
 window.addEventListener('load', () => {
-  // setActiveCategoryId();
-
+  console.log('STATE STATUS...\n', getState());
   loadEventsBeforeDOMRender().then(
     (eventsLoadedBeforeDOMRender, errorInLoadEventsBeforeDOMRender) => {
       if (eventsLoadedBeforeDOMRender) {

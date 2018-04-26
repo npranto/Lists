@@ -2,17 +2,15 @@ import { getState, setState, reloadDOMContent } from './../state';
 
 const { document } = window;
 
-const loadListCategoryEvents = () => {
-  const newState = getState();
-
+const updateCategoryIdOnClick = () => {
   const listCategoryElements = document.querySelectorAll('#ListCategory');
-  console.log(listCategoryElements);
   listCategoryElements.forEach(elem => {
     elem.addEventListener('click', () => {
+      const newState = getState();
       newState.activeCategoryId = elem.dataset.categoryId;
       setState(newState, reloadDOMContent);
     });
   });
 };
 
-export default loadListCategoryEvents;
+export default updateCategoryIdOnClick;

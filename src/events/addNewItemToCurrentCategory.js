@@ -3,22 +3,12 @@ import { ListItemObject } from './../classes';
 
 const { document } = window;
 
-const loadAddListCategoryEvents = () => {
-  document
-    .querySelector('.AddListItem .add-list-item-form #add-list-item-input')
-    .addEventListener('keyup', e => {
-      const newState = getState();
-      if (!newState.newItem) {
-        newState.newItem = '';
-      }
-      newState.newItem = e.target.value;
-      setState(newState);
-    });
+const addNewItemToCurrentCategory = () => {
   document
     .querySelector('.AddListItem .add-list-item-form')
     .addEventListener('submit', () => {
       const newState = getState();
-      if (newState.newItem) {
+      if (newState.newItem && newState.newItem.length > 0) {
         newState.list[newState.activeCategoryId].push(
           new ListItemObject(newState.newItem)
         );
@@ -27,4 +17,4 @@ const loadAddListCategoryEvents = () => {
     });
 };
 
-export default loadAddListCategoryEvents;
+export default addNewItemToCurrentCategory;
