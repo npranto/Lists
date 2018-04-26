@@ -5,14 +5,17 @@ import './List.css';
 
 const List = () => {
   const { activeCategoryId, list } = getState();
-  const listItems = list[activeCategoryId] ? list[activeCategoryId] : [];
+  const listItems =
+    list && list[activeCategoryId] ? list[activeCategoryId] : [];
   console.log(listItems);
-  return `
-		<div class="List">
-			${AddListItem()}
-			${ListItems({ listItems })}
-		</div>
-	`;
+  return activeCategoryId
+    ? `
+			<div class="List">
+				${AddListItem()}
+				${ListItems({ listItems })}
+			</div>
+		`
+    : ``;
 };
 
 export default List;

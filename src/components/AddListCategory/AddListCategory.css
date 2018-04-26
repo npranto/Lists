@@ -15,6 +15,7 @@
 }
 .add-category-btn i:hover {
 	color: red;
+	transform: scale(1.15);
 }
 .swal-overlay {
 	background-color: rgba(43, 165, 137, 0.45);
