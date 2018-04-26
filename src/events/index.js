@@ -1,10 +1,7 @@
-import loadAddListCategoryEvents from './AddListCategory';
-import loadAddListItemEvents from './AddListItem';
-import loadListCategoryEvents from './ListCategory';
-import loadMaterialCheckboxEvents from './MaterialCheckbox';
-import setActiveCategoryIdEvent from './setActiveCategoryId';
-
-export const setActiveCategoryId = setActiveCategoryIdEvent;
+import updateCategoryIdOnClick from './updateActiveCategoryIdOnClick';
+import handleNewItemInputOnChange from './handleNewItemInputOnChange';
+import addNewItemToCurrentCategory from './addNewItemToCurrentCategory';
+import addNewCategory from './addNewCategory';
 
 export const loadEventsBeforeDOMRender = () =>
   new Promise((resolve, reject) => {
@@ -19,10 +16,11 @@ export const loadEventsBeforeDOMRender = () =>
 export const loadEventsAfterDOMRender = () =>
   new Promise((resolve, reject) => {
     try {
-      loadAddListCategoryEvents();
-      loadListCategoryEvents();
-      loadAddListItemEvents();
-      loadMaterialCheckboxEvents();
+      updateCategoryIdOnClick();
+      updateCategoryIdOnClick();
+      handleNewItemInputOnChange();
+      addNewItemToCurrentCategory();
+      addNewCategory();
       resolve(true);
     } catch (error) {
       console.error(error);

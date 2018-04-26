@@ -41,6 +41,7 @@ export const getState = () => {
               }
             ]
           },
+          newItem: '',
           activeCategoryId: null
         }
       );
@@ -48,6 +49,7 @@ export const getState = () => {
 
 export const setState = (newState, cb) => {
   localStorage.setItem(KEY, JSON.stringify(newState));
+  console.log('STATE UPDATE...\n', getState());
   if (cb) {
     cb();
   }

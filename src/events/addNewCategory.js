@@ -4,7 +4,7 @@ import { getUniqueId } from './../utils';
 
 const { document } = window;
 
-const loadAddListCategoryEvents = () => {
+const addNewCategory = () => {
   document
     .querySelector('.AddListCategory .add-category-btn')
     .addEventListener('click', () => {
@@ -49,4 +49,4 @@ const loadAddListCategoryEvents = () => {
     });
 };
 
-export default loadAddListCategoryEvents;
+export default addNewCategory;
