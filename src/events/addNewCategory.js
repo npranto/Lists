@@ -1,6 +1,7 @@
 import swal from 'sweetalert';
 import { getState, setState, reloadDOMContent } from './../state';
 import { getUniqueId } from './../utils';
+import { ListCategoryObject } from '../classes';
 
 const { document } = window;
 
@@ -38,10 +39,10 @@ const addNewCategory = () => {
           const newState = getState();
           const newId = getUniqueId('category');
           if (newId) {
-            newState.categories.unshift({
-              id: getUniqueId('category'),
-              category: value
-            });
+            const newCategory = new ListCategoryObject(value);
+            newState.categories.unshift(newCategory);
+            newState.activeCategoryId = newCategory.id;
+            newState.list[newCategory.id] = [];
             setState(newState, reloadDOMContent);
           }
         }
