@@ -10,7 +10,7 @@ const MaterialCheckbox = ({ item }) => `
 				type="checkbox" 
 				class="checkbox" 
 				${item.complete ? 'checked' : ''} />	
-					${item.item}
+				<span class="item ${item.complete ? 'cross-off' : ''}"> ${item.item} </span>
 		</label>
 		<span> 
 			<i 

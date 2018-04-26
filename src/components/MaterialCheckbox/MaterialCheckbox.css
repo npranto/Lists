@@ -10,6 +10,10 @@
 .delete-hover {
 	color: red;
 }
+.cross-off {
+	color: lightgray;
+	text-decoration: line-through;
+}
 
 /* 
 	Codepen: Google material style checkbox (css only) by Sam
