@@ -2,6 +2,7 @@ import updateCategoryIdOnClick from './updateActiveCategoryIdOnClick';
 import handleNewItemInputOnChange from './handleNewItemInputOnChange';
 import addNewItemToCurrentCategory from './addNewItemToCurrentCategory';
 import addNewCategory from './addNewCategory';
+import toggleItemComplete from './toggleItemComplete';
 
 export const loadEventsBeforeDOMRender = () =>
   new Promise((resolve, reject) => {
@@ -21,6 +22,7 @@ export const loadEventsAfterDOMRender = () =>
       handleNewItemInputOnChange();
       addNewItemToCurrentCategory();
       addNewCategory();
+      toggleItemComplete();
       resolve(true);
     } catch (error) {
       console.error(error);
