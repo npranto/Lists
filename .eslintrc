@@ -19,6 +19,27 @@
 				"vars": "local",
 				"args": "none"
 			}
+		],
+		"no-tabs": 0,
+		"indent": [
+			"error", 
+			"tab"
+		],
+		"no-console": [
+			"error", 
+			{ 
+				"allow": [
+					"warn", 
+					"error"
+				] 
+			}
+		],
+		"max-len": [
+			"error", 
+			{ 
+				"code": 100,
+				"ignoreComments": true
+			}
 		]
 	}
 }

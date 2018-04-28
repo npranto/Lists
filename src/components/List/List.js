@@ -4,17 +4,16 @@ import { getState } from './../../state';
 import './List.css';
 
 const List = () => {
-  const { activeCategoryId, list } = getState();
-  const listItems =
-    list && list[activeCategoryId] ? list[activeCategoryId] : [];
-  return activeCategoryId
-    ? `
+	const { activeCategoryId, list } = getState();
+	const listItems = (list && list[activeCategoryId]) ? list[activeCategoryId] : [];
+	return activeCategoryId
+		? `
 			<div class="List">
 				${AddListItem()}
 				${ListItems({ listItems })}
 			</div>
 		`
-    : ``;
+		: '';
 };
 
 export default List;

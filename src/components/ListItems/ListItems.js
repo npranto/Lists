@@ -4,12 +4,12 @@ import './ListItems.css';
 
 const ListItems = ({ listItems }) => `
 	<div class="ListItems">
-		${mapRender(
-      listItems,
-      item => `
-					${ListItem({ item })}
-				`
-    )}
+	${mapRender(
+		listItems,
+		item => `
+			${ListItem({ item })}
+		`
+	)}
 	</div>
 `;
 
