@@ -10,7 +10,8 @@
 
 ## Table of Contents
 
-* [Key Features](#documentation)
+* [Table of Contents](#table-of-contents)
+* [Key Features](#key-features)
 * [Getting Started](#getting-started)
 * [How To Use and Contribute](#how-to-use-and-contribute)
 * [Credits](#credits)
@@ -19,11 +20,13 @@
 * [License](#license)
 * [Authors](#authors)
 
-![screenshot](https://media.giphy.com/media/3o6MbhbYBsqTrbP2qQ/giphy.gif)
+<div align="center">
+	<img src="https://media.giphy.com/media/3o6MbhbYBsqTrbP2qQ/giphy.gif" alt="Screenshot" />
+</div>
 
 ## Key Features
 
-* Quickly get to your local lists without having third party accounts at all
+* Quickly get to your local lists without having to sign up/in to any third party accounts
 * Manage your list of todos, groceries, chores, homeworks, or any other daily tasks in the most simplest way
 * Track different lists and their todos as plain old checklists
 * Provides very simple and fast user interface for navigating lists all around
@@ -61,7 +64,6 @@ Source code makes use of several open source packages, a few keys ones include..
 - [Babel](https://babeljs.io/) - To transpile ES6+ syntax to ES5, in order to run source code inside browser
 - [Webpack](https://webpack.js.org/) - For module bundling and generating distributing assets
 - [Webpack](https://webpack.js.org/) - For module bundling and generating distributing assets
-
 - [ESLint](https://eslint.org/) - To lint source code for better readability, syntax consistency and proper formatting
 - [SweetAlert](https://sweetalert.js.org/) - For smooth, playful interactive alerts 
 - [uniqid](https://www.npmjs.com/package/uniqid) - To generate unique ids for list categories and items
@@ -73,14 +75,11 @@ Source code makes use of several open source packages, a few keys ones include..
 ## You May Also Like...
 
 - [focus](https://github.com/npranto/focus) - A simple, elegant task manager application to help students and computer savvy workers get their work done efficiently and on time
-
 - [weatherion](https://github.com/npranto/weatherion) - A simple clone of the Apple Weather application - quickly check weather for current location and by city
 
 ## License
 
 [MIT](https://tldrlegal.com/license/mit-license)
-
----
 
 ## Authors
 
