@@ -5,8 +5,8 @@ import App from './components/App';
 import './index.css';
 
 window.addEventListener('load', () => {
-  console.log('STATE STATUS...\n', getState());
-  loadEventsBeforeDOMRender().then(
+	console.log('STATE STATUS...\n', getState());
+	loadEventsBeforeDOMRender().then(
     (eventsLoadedBeforeDOMRender, errorInLoadEventsBeforeDOMRender) => {
       if (eventsLoadedBeforeDOMRender) {
         render('Lists', App).then((rendered, errorInRender) => {
