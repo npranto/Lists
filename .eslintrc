@@ -30,7 +30,8 @@
 			{ 
 				"allow": [
 					"warn", 
-					"error"
+					"error",
+					"log"
 				] 
 			}
 		],
@@ -38,6 +39,7 @@
 			"error", 
 			{ 
 				"code": 100,
+				"tabWidth": 2,
 				"ignoreComments": true
 			}
 		]

@@ -1,21 +1,12 @@
-import swal from 'sweetalert';
 import { getState, setState, reloadDOMContent } from './../state';
-
-const askForConfirmation = () =>
-	swal({
-		title: 'Are you sure?',
-		text: 'Seriously, no joke, we will delete it!',
-		icon: 'warning',
-		buttons: true,
-		dangerMode: true
-	});
-
+import { askForConfirmation } from './../utils';
 
 const deleteItemFromCurrentCategory = () => {
 	const deleteItemIconElems = document.querySelectorAll('.MaterialCheckbox span .delete');
 	if (deleteItemIconElems) {
 		deleteItemIconElems.forEach((elem) => {
-			elem.addEventListener('click', () => {
+			elem.addEventListener('click', (e) => {
+				e.preventDefault();
 				askForConfirmation()
 					.then((willDelete) => {
 						if (willDelete) {

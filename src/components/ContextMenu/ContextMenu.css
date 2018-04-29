@@ -1,0 +1,31 @@
+.ContextMenu {
+  display: none;
+  position: absolute;
+	z-index: 10;
+}
+.ContextMenuActive {
+	display: flex;
+	flex-direction: column;
+	background: whitesmoke;
+}
+.ContextMenuActive .context-menu-link {
+	text-decoration: none;
+	color: black;
+	background: whitesmoke;
+	padding: 15%;
+	width: 100%;
+}
+.ContextMenuActive .rename:hover {
+	background: orange;
+	color: white;
+}
+.ContextMenuActive .delete:hover {
+	background: red;
+	color: white;
+}
+.ContextMenuActive .orange {
+	color: orange;
+}
+.ContextMenuActive .red {
+	color: red;
+}

@@ -5,6 +5,8 @@ import addNewCategory from './addNewCategory';
 import toggleItemComplete from './toggleItemComplete';
 import toggleDeleteIconOnItemHover from './toggleDeleteIconOnItemHover';
 import deleteItemFromCurrentCategory from './deleteItemFromCurrentCategory';
+import enableCustomContextMenuOnCategory from './enableCustomContextMenuOnCategory';
+import deleteCategory from './deleteCategory';
 
 export const loadEventsBeforeDOMRender = () =>
 	new Promise((resolve, reject) => {
@@ -26,6 +28,8 @@ export const loadEventsAfterDOMRender = () =>
 			toggleItemComplete();
 			toggleDeleteIconOnItemHover();
 			deleteItemFromCurrentCategory();
+			enableCustomContextMenuOnCategory();
+			deleteCategory();
 			resolve(true);
 		} catch (error) {
 			console.error(error);

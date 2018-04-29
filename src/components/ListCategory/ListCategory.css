@@ -1,6 +1,7 @@
 .ListCategory {
 	display: flex;
 	flex-shrink: 0;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 1.5% 3%;
