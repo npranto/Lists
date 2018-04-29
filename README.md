@@ -35,7 +35,7 @@
 
 ## Getting Started
 
-* Start using [**Lists**](https://github.com/npranto/lists)
+* Start using [**Lists**](listsareawesome.surge.sh)
 
 ## How To Use and Contribute
 
