@@ -55,7 +55,112 @@ $ npm install
 $ npm run dev
 ```
 
-Note: Although Lists was built with plain JavaScript, the structure of the source code can feel fairly uncommon. Still, take a look, explore and contribute if you wish. Just for a little simplicy sake, refer to the [directory tree](#directory-tree) as needed. 
+Note: Although Lists was built with plain JavaScript, the structure of the source code can feel fairly uncommon. Still, take a look, explore and contribute if you wish. Just for a little simplicy sake, refer to the [source tree](#source-tree) as needed. 
+
+## Source Tree
+
+```bash
+├── LICENSE
+├── README.md
+├── TREE.md
+├── package-lock.json
+├── package.json
+├── public
+|  └── index.html
+├── src
+|  ├── assets
+|  |  └── favicons
+|  |     ├── android-icon-144x144.png
+|  |     ├── android-icon-192x192.png
+|  |     ├── android-icon-36x36.png
+|  |     ├── android-icon-48x48.png
+|  |     ├── android-icon-72x72.png
+|  |     ├── android-icon-96x96.png
+|  |     ├── apple-icon-114x114.png
+|  |     ├── apple-icon-120x120.png
+|  |     ├── apple-icon-144x144.png
+|  |     ├── apple-icon-152x152.png
+|  |     ├── apple-icon-180x180.png
+|  |     ├── apple-icon-57x57.png
+|  |     ├── apple-icon-60x60.png
+|  |     ├── apple-icon-72x72.png
+|  |     ├── apple-icon-76x76.png
+|  |     ├── apple-icon-precomposed.png
+|  |     ├── apple-icon.png
+|  |     ├── browserconfig.xml
+|  |     ├── favicon-16x16.png
+|  |     ├── favicon-32x32.png
+|  |     ├── favicon-96x96.png
+|  |     ├── favicon.ico
+|  |     ├── manifest.json
+|  |     ├── ms-icon-144x144.png
+|  |     ├── ms-icon-150x150.png
+|  |     ├── ms-icon-310x310.png
+|  |     └── ms-icon-70x70.png
+|  ├── classes
+|  |  ├── ListCategory.js
+|  |  ├── ListItem.js
+|  |  └── index.js
+|  ├── components
+|  |  ├── AddListCategory
+|  |  |  ├── AddListCategory.css
+|  |  |  └── AddListCategory.js
+|  |  ├── AddListItem
+|  |  |  ├── AddListItem.css
+|  |  |  └── AddListItem.js
+|  |  ├── App.css
+|  |  ├── App.js
+|  |  ├── ContextMenu
+|  |  |  ├── ContextMenu.css
+|  |  |  └── ContextMenu.js
+|  |  ├── Header
+|  |  |  ├── Header.css
+|  |  |  └── Header.js
+|  |  ├── List
+|  |  |  ├── List.css
+|  |  |  └── List.js
+|  |  ├── ListCategories
+|  |  |  ├── ListCategories.css
+|  |  |  └── ListCategories.js
+|  |  ├── ListCategory
+|  |  |  ├── ListCategory.css
+|  |  |  └── ListCategory.js
+|  |  ├── ListItem
+|  |  |  ├── ListItem.css
+|  |  |  └── ListItem.js
+|  |  ├── ListItems
+|  |  |  ├── ListItems.css
+|  |  |  └── ListItems.js
+|  |  └── MaterialCheckbox
+|  |     ├── MaterialCheckbox.css
+|  |     └── MaterialCheckbox.js
+|  ├── events
+|  |  ├── addNewCategory.js
+|  |  ├── addNewItemToCurrentCategory.js
+|  |  ├── deleteCategory.js
+|  |  ├── deleteItemFromCurrentCategory.js
+|  |  ├── enableCustomContextMenuOnCategory.js
+|  |  ├── handleNewItemInputOnChange.js
+|  |  ├── index.js
+|  |  ├── renameCategory.js
+|  |  ├── toggleDeleteIconOnItemHover.js
+|  |  ├── toggleItemComplete.js
+|  |  └── updateActiveCategoryIdOnClick.js
+|  ├── index.css
+|  ├── index.js
+|  ├── state
+|  |  └── index.js
+|  └── utils
+|     ├── askForConfirmation.js
+|     ├── getUniqueId.js
+|     ├── index.js
+|     ├── logger.js
+|     ├── mapRender.js
+|     └── render.js
+├── webpack.common.js
+├── webpack.dev.js
+└── webpack.prod.js
+```
 
 ## Credits
 
