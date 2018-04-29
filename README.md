@@ -35,7 +35,7 @@
 
 ## Getting Started
 
-* Start using [**Lists**](listsareawesome.surge.sh)
+* Start using [**Lists**](http://listsareawesome.surge.sh/)
 
 ## How To Use and Contribute
 
