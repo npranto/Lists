@@ -33,8 +33,8 @@ const webpackCommonConfig = {
 		}),
 		new CopyWebpackPlugin([
 			{
-				from: './src/assets/favicons',
-				to: 'favicons/'
+				from: './src/assets',
+				to: 'assets/'
 			}
 		])
 	]
