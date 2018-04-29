@@ -59,16 +59,15 @@ Note: Although Lists was built with plain JavaScript, the structure of the sourc
 
 ## Source Tree
 
-```bash
-├── LICENSE
-├── README.md
-├── TREE.md
+```bash	
+├── LICENSE																							# Documentation (table of contents, key features, source tree)
+├── README.md																								
 ├── package-lock.json
 ├── package.json
-├── public
+├── public																							# Static (index.html)
 |  └── index.html
-├── src
-|  ├── assets
+├── src																									# Source directory (contains root starter file, assets, feature components, events, state and helper utilities)
+|  ├── assets																						# Assets directory (contains favicons, images and other media contents)
 |  |  └── favicons
 |  |     ├── android-icon-144x144.png
 |  |     ├── android-icon-192x192.png
@@ -97,18 +96,18 @@ Note: Although Lists was built with plain JavaScript, the structure of the sourc
 |  |     ├── ms-icon-150x150.png
 |  |     ├── ms-icon-310x310.png
 |  |     └── ms-icon-70x70.png
-|  ├── classes
+|  ├── classes																					# Classes directory (contains blueprints for different objects)
 |  |  ├── ListCategory.js
 |  |  ├── ListItem.js
 |  |  └── index.js
-|  ├── components
+|  ├── components																				# Components directory (Feature and user interface components, similar to React components, of course functions differently)
 |  |  ├── AddListCategory
 |  |  |  ├── AddListCategory.css
 |  |  |  └── AddListCategory.js
 |  |  ├── AddListItem
 |  |  |  ├── AddListItem.css
 |  |  |  └── AddListItem.js
-|  |  ├── App.css
+|  |  ├── App.css	
 |  |  ├── App.js
 |  |  ├── ContextMenu
 |  |  |  ├── ContextMenu.css
@@ -134,32 +133,32 @@ Note: Although Lists was built with plain JavaScript, the structure of the sourc
 |  |  └── MaterialCheckbox
 |  |     ├── MaterialCheckbox.css
 |  |     └── MaterialCheckbox.js
-|  ├── events
+|  ├── events																						# Events directory (contains different functions to call on user interactions and events)
 |  |  ├── addNewCategory.js
 |  |  ├── addNewItemToCurrentCategory.js
 |  |  ├── deleteCategory.js
 |  |  ├── deleteItemFromCurrentCategory.js
-|  |  ├── enableCustomContextMenuOnCategory.js
+|  |  ├── enableCustomContextMenuOnCategory.js					
 |  |  ├── handleNewItemInputOnChange.js
 |  |  ├── index.js
 |  |  ├── renameCategory.js
 |  |  ├── toggleDeleteIconOnItemHover.js
 |  |  ├── toggleItemComplete.js
 |  |  └── updateActiveCategoryIdOnClick.js
-|  ├── index.css
-|  ├── index.js
-|  ├── state
+|  ├── index.css																				# Root styles
+|  ├── index.js																					# Root starter script that bootstraps and renders content to DOM
+|  ├── state																						# State directory (setup for localStorage and default starter state)
 |  |  └── index.js
-|  └── utils
+|  └── utils																						# Provides utility functions that are used across the entire source code
 |     ├── askForConfirmation.js
 |     ├── getUniqueId.js
 |     ├── index.js
 |     ├── logger.js
 |     ├── mapRender.js
 |     └── render.js
-├── webpack.common.js
-├── webpack.dev.js
-└── webpack.prod.js
+├── webpack.common.js																		# Shared Webpack bundler setup
+├── webpack.dev.js																			# Development Webpack bundler setup
+└── webpack.prod.js																			# Production Webpack bundler setup
 ```
 
 ## Credits
