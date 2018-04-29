@@ -1,9 +1,9 @@
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const webpackConfig = {
-	mode: 'development',
+const webpackCommonConfig = {
 	entry: './src/index.js',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -26,6 +26,7 @@ const webpackConfig = {
 		]
 	},
 	plugins: [
+		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
 			template: './public/index.html'
@@ -36,14 +37,7 @@ const webpackConfig = {
 				to: 'favicons/'
 			}
 		])
-	],
-	devtool: 'inline-source-map',
-	devServer: {
-		contentBase: path.join(__dirname, 'dist'),
-		compress: true,
-		port: 9000
-	},
-	watch: false
+	]
 };
 
-module.exports = webpackConfig;
+module.exports = webpackCommonConfig;
