@@ -22,6 +22,12 @@ const webpackCommonConfig = {
 				test: /\.css$/,
 				exclude: /(node_modules|bower_components)/,
 				use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+			},
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/,
+				use: [
+					'file-loader'
+				]
 			}
 		]
 	},

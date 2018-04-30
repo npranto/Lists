@@ -15,8 +15,23 @@
 }
 .add-category-btn i:hover {
 	color: red;
-	transform: scale(1.15);
+	animation-name: heartbeat;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
 }
 .swal-overlay {
 	background-color: rgba(43, 165, 137, 0.45);
+}
+@keyframes heartbeat {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		color: red;
+		transform: scale(1.15)
+	}
+	100% {
+		transform: scale(1)
+	}
 }
