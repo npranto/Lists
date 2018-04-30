@@ -1,6 +1,16 @@
 .Header {
 	width: 100%;
+	display: flex;
 }
 .Header .faded {
 	color: gray;
+}
+.Header .lists-logo {
+	padding-right: 1%;
+	display: flex;
+	align-items: center;
+}
+.Header .lists-logo img {
+	max-width: 100%;
+	height: auto;
 }
