@@ -54,7 +54,7 @@ $ npm install
 $ npm run dev
 ```
 
-Note: Although Lists was built with plain JavaScript, the structure of the source code can feel fairly uncommon. Still, take a look, explore and contribute if you wish. Just for a little simplicy sake, refer to the [source tree](#source-tree) as needed. 
+Note: Although Lists was built with plain JavaScript, the structure of the source code can feel fairly uncommon. Still, take a look, explore and contribute if you wish. Just for a little simplicity, refer to the [source tree](#source-tree) if needed. 
 
 ## Source Tree
 	
