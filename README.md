@@ -10,7 +10,6 @@
 
 ## Table of Contents
 
-* [Table of Contents](#table-of-contents)
 * [Key Features](#key-features)
 * [Getting Started](#getting-started)
 * [How To Use and Contribute](#how-to-use-and-contribute)
